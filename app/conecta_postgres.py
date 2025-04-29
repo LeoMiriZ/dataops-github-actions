@@ -1,7 +1,7 @@
 import psycopg2
 import time
 from flask import Flask
-from flask_restx import Api, Resource
+from flask_restx import Api, Resource # type: ignore
 
 app = Flask(__name__)
 api = Api(app, version='1.0', title='Conecta Postgres API', description='API para conectar ao PostgreSQL', doc='/swagger')
