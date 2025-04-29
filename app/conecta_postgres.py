@@ -18,7 +18,7 @@ def connect_to_postgres():
     return conn
 
 @ns.route('/')
-class AlunosList(Resource):
+class AlunosList(Resource): 
     def get(self):
         time.sleep(5)
         conn = connect_to_postgres()
