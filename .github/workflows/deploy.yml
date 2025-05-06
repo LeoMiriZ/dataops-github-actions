@@ -20,7 +20,7 @@ jobs:
                 username: ${{ secrets.SERVER_USER }}
                 key: ${{ secrets.SERVER_SSH_KEY }}
                 script: |
-                    cd /home/${{ secrets.SERVER_USER }}/meuapp
+                    cd /home/${{ secrets.SERVER_USER }}/dataops-github-actions
                     git pull origin main
                     docker-compose down || true
                     docker-compose up -d --build
